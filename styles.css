@@ -1,0 +1,152 @@
+body {
+				margin: 0;
+		  	font-family: Arial, Helvetica, sans-serif;
+		  	background: #333;
+		  	color: #fff;
+		  	font-size: 1.1em;
+		  	line-height: 1.5;
+		  	text-align: center;
+}
+
+img{
+				display: block;
+				width: 100%;
+				height: 420px;
+}
+
+h1, h2, h3{
+				margin: 0;
+				padding: 1em 0;
+}
+
+p{
+				margin: 0;
+				padding: 1em 0;
+}
+
+#btn{
+				display: inline-block;
+				background: #333;
+				color: #fff;
+				text-decoration: none;
+				border: 1px solid #666;
+				padding: 1em 2em;
+				margin: .5em 0;
+}
+
+#btn:hover{
+				background: #eaeaea;
+				color: #333;
+}
+
+#showcase{
+				min-height: 480px;
+				color: #fff;
+				text-align: center;
+}
+#showcase .bg-img{
+				position: absolute;
+				background: #333 url("img_1.jpg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				width: 100%;
+				height: 480px;
+				z-index: -1;
+				opacity: 0.3;
+}
+
+#showcase h1{
+				padding-top: 100px;
+				padding-bottom: 0;
+}
+
+#showcase .content-wrap,
+#sec-a .content-wrap,
+.card-content{
+				padding: 0 1.5rem;
+}
+
+#sec-a{
+				background: #eaeaea;
+				color: #333;
+				padding-bottom: 2em;
+}
+
+#sec-b{
+				padding: 2em 1em 1em;
+}
+
+#sec-b ul{
+				list-style: none;
+				margin: 0;
+				padding: 0;
+}
+
+#sec-b li{
+				margin-bottom: 1em;
+				background: #fff;
+				color: #333;
+}
+
+#sec-c{
+				background: #fff;
+				color: #333;
+				padding: 2em;
+}
+
+#sec-d .box{
+				padding: 2em;
+				color: #fff;
+}
+
+#sec-d .box:first-child{
+				background: #2690d4;
+}
+
+#footer{
+				padding: 2em;
+				background: #000;
+				color: #fff;
+				text-align: center;
+}
+
+#footer a{
+				color: #2690d4;
+				text-decoration: none;
+}
+
+@media(min-width: 650px){
+
+.grid{
+				display: grid; 
+				grid-template-columns: 1fr repeat(2, minmax(auto, 20em)) 1fr;
+}
+
+.content-wrap, 
+.container, 
+#sec-b ul{
+				grid-column: 2/4;
+}
+
+.box,
+#footer div{
+				grid-column: span 2;
+}
+
+#sec-a .content-text{
+				columns: 2;
+				column-gap: 2em;
+}
+
+#sec-a .content-text p{
+				padding-top: 0;
+}
+
+#sec-b ul{
+				display: grid;
+				grid-auto-flow: column;
+				gap: 15px;
+}
+
+}
